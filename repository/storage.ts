@@ -13,3 +13,11 @@ export async function getFilesLists(): Promise<string[]> {
     return uploadNames
 }
 
+
+
+export async function getFiltContentOrCreate(cid:string): Promise<string> {
+    const fileContent = await web3Client.get(cid)
+
+    
+}
+

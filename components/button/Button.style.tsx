@@ -6,11 +6,11 @@ export const Button = styled.button`
     padding: 10px 20px;
     color: white;
     border: 0;
-    transform: skewX(${Math.random() * 30}deg);
+    transform: skewX(${Math.random() * 20}deg);
     transition: 0.33s all;
     &:hover{
         background: black;
         filter: blur(1px);
-        transform: scale(0.9);
+        transform: scale(0.9) skewX(${-Math.random() * 20}deg);
     }
 `
